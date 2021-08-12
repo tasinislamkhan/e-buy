@@ -21,7 +21,7 @@ Version:
     --gray-white:#dddddd;
     --dark-text-color: #222222;
     --hight-light: #de4644;
-    --main-font: 'Raleway', sans-serif;
+    --main-font: 'Raleway' , sans-serif;
     --scnd-font: 'Open Sans', sans-serif;
     --third-font: 'Sacramento', cursive;
 }
@@ -60,23 +60,67 @@ img {
 /* Header Section css Start */
 #top_header{
     background-color: var(--gray);
+    font-family: var(--scnd-font);
+    font-size: 14px;
+}
+select{
+    appearance: none;
+    background-color: var(--gray);
+    border: none;
+    color: white;
+}
+select option:active{
+    border: none;
 }
 #top_header .left_top_header  ul li {
     display: inline-block;
     line-height: 55px;
 }
-select{
-    appearance: none;
+#top_header .left_top_header a {
+    color: var(--gray-white);
 }
-#top_header .right_top_header{
+#top_header .right_top_header ul li{
     display: inline-block;
-    color: black;
+    line-height: 55px;
+}
+#top_header .right_top_header a{
+    color: var(--gray-white);
 }
 .navbar .container {
-    height: 55px;
+    height: 54px;
 }
-#main_menu .navbar-nav .nav-item{
+#main_menu .navbar-nav .nav-item a{
     color: black;
+    font-size: 16px;
+    margin-right: 12px;
+    font-weight: 500;
+    position: relative;
+    transition: linear .4s;
+    -webkit-transition: linear .4s;
+    -moz-transition: linear .4s;
+    -ms-transition: linear .4s;
+    -o-transition: linear .4s;
+}
+#main_menu .navbar-nav .nav-item a:hover{
+    color: var(--hight-light);
+    transition: linear .4s;
+    -webkit-transition: linear .4s;
+    -moz-transition: linear .4s;
+    -ms-transition: linear .4s;
+    -o-transition: linear .4s;
+}
+
+#main_menu .navbar-nav{
+    padding-left: 247px;
+}
+.right_top_header {
+    text-align: right;
+}
+.right_top_header li{
+    padding-left: 30px;
+}
+.left_top_header li {
+    padding-right: 30px;
 }
 /* Header Section css End */
 
